@@ -1,0 +1,10 @@
+img {
+  width: 100%;
+}
+h2 {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+section {
+  background-color: var(--verde-oliva);
+  padding: 4rem 0;
+}

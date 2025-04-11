@@ -1,0 +1,40 @@
+:root {
+  --verde-escuro: #2f5320;
+  --verde-oliva: #8da35d;
+  --cinza-medio: #b5baba;
+  --cinza-claro: #eae8e7;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
+    /* camada de degrade */
+      url("/assets/img/ChatGPT\ Image\ 10\ de\ abr.\ de\ 2025\,\ 17_40_09.png"); /* imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 3rem;
+}
+h1 {
+  width: 46rem;
+  text-align: center;
+  font-size: 30pt;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  color: var(--cinza-claro);
+}
