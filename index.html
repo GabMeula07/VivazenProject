@@ -6,6 +6,8 @@
     <link rel="icon" type="image/png" href="/assets/img/logo.png" />
     <link rel="stylesheet" href="/assets/css/index.css" />
     <link rel="stylesheet" href="/assets/css/header.css" />
+    <link rel="stylesheet" href="/assets/css/home.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,16 +23,33 @@
         <a class="link-header" href="">Sobre</a>
         <a class="link-header" href="">Unidades</a>
         <a class="link-header" href="/campanhas/">Campanhas</a>
-        <a class="link-header" href="">Planos</a>
+        <a class="link-header" href="/planos/">Planos</a>
         <a class="entrar" href="#">Entrar</a>
       </nav>
     </header>
     <main>
-      <div class="carrousel">
-        <img src="/assets/img/arte 1.jpg" alt="" />
-        <img src="/assets/img/arte 2.jpg" alt="" />
-        <img src="/assets/img/arte 3.jpg" alt="" />
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="slide">
+            <img src="/assets/img/arte 1.jpg" alt="Imagem 1" />
+          </div>
+          <div class="slide">
+            <img src="/assets/img/arte 2.png" alt="Imagem 2" />
+          </div>
+          <div class="slide">
+            <img src="/assets/img/arte 3.jpg" alt="Imagem 3" />
+          </div>
+        </div>
+        <button class="carousel-btn prev-btn">&#10094;</button>
+        <button class="carousel-btn next-btn">&#10095;</button>
+
+        <div class="dots-container">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+        </div>
       </div>
     </main>
+    <script src="/assets/js/carousel.js"></script>
   </body>
 </html>
