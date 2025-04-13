@@ -80,7 +80,7 @@ main {
 .plans {
   margin: 2rem auto;
   width: 70%;
-  min-width: 400px;
+
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
