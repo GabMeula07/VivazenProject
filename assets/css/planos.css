@@ -53,13 +53,6 @@ main {
   background-color: #ffffff;
 }
 
-@media (max-width: 768px) {
-  .dot {
-    width: 10px;
-    height: 10px;
-  }
-}
-
 .container {
   width: 100%;
   text-align: center;
@@ -76,6 +69,7 @@ main {
 .container h1 {
   font-size: 30pt;
   margin-bottom: 0.2rem;
+  color: var(--verde-escuro);
 }
 
 .container p {
@@ -84,18 +78,20 @@ main {
 }
 
 .plans {
+  margin: 2rem auto;
+  width: 70%;
+  min-width: 400px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
-  margin-top: 2rem;
   align-items: stretch; /* Estica todos os cards para mesma altura */
 }
 
 .plan-card {
   background-color: var(--cinza-claro);
   border-radius: 10px;
-  padding: 1rem;
+  padding: 2rem 1rem;
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -136,6 +132,7 @@ main {
   cursor: pointer;
   transition: all 0.3s ease;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 600;
   justify-self: center;
   margin-top: auto;
   align-self: center;
@@ -143,4 +140,34 @@ main {
 
 .btn:hover {
   background-color: var(--verde-oliva);
+}
+
+@media (max-width: 768px) {
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media screen and (width <= 900px) {
+  .plans {
+    width: 80%;
+  }
+  .container p {
+    font-size: 11pt;
+  }
+}
+
+@media screen and (width <= 600px) {
+  .plans {
+    flex-direction: column;
+    width: 100%;
+    justify-content: stretch;
+    margin: 2rem auto;
+    padding: 0 2rem;
+  }
+  .plan-card {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
 }
